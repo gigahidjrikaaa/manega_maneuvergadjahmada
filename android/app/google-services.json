@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "323504681870",
+    "firebase_url": "https://esp826-test-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "esp826-test",
+    "storage_bucket": "esp826-test.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:323504681870:android:12f01596c3a9b6861aeadf",
+        "android_client_info": {
+          "package_name": "com.example.manega_maneuvergadjahmada"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHTrrnsLeqe2f3h4raT7P-a-veHHDg3u4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:323504681870:android:a7049147dcbfaca61aeadf",
+        "android_client_info": {
+          "package_name": "com.syauqi.map"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHTrrnsLeqe2f3h4raT7P-a-veHHDg3u4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
