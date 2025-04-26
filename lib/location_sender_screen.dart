@@ -200,7 +200,7 @@ class _LocationSenderScreenState extends State<LocationSenderScreen> {
 
     // --- Prepare data for Firebase ---
     // Create data with CSV format for easier parsing
-    final csvString = '${position.latitude},${position.longitude},${position.altitude},${position.speed}';
+    final csvString = '${position.latitude},${position.longitude},${position.altitude.toStringAsFixed(2)},${position.speed.toStringAsFixed(2)}';
     
     // Still keep the structured data for Firebase
     Map<String, dynamic> locationData = {
