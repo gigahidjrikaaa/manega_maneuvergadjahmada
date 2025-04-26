@@ -210,7 +210,7 @@ class _LocationSenderScreenState extends State<LocationSenderScreen> {
       'altitude': position.altitude,
       'speed': position.speed,
       'accuracy': position.accuracy,
-      'timestamp': position.timestamp?.millisecondsSinceEpoch ?? 
+      'timestamp': position.timestamp.millisecondsSinceEpoch ?? 
         DateTime.now().millisecondsSinceEpoch,
       'source': 'FlutterApp_TimedSend_v2',
       'lastUpdated': ServerValue.timestamp,
@@ -235,7 +235,7 @@ class _LocationSenderScreenState extends State<LocationSenderScreen> {
         print('CSV data updated successfully at: ${csvRef.path}');
       } catch (csvError) {
         print('Error updating CSV data: $csvError');
-        throw csvError; // Rethrow to be caught by outer try/catch
+        rethrow; // Rethrow to be caught by outer try/catch
       }
 
       // First update - main data
@@ -244,7 +244,7 @@ class _LocationSenderScreenState extends State<LocationSenderScreen> {
         print('Main location data updated successfully');
       } catch (mainError) {
         print('Error updating main location data: $mainError');
-        throw mainError; // Rethrow to be caught by outer try/catch
+        rethrow; // Rethrow to be caught by outer try/catch
       }
       
 
